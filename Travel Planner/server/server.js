@@ -2,8 +2,7 @@ const express = require('express')
 const app = express()
 
 cities = 
-[
-    
+[ 
     {
         id : 1,
         name : "Toronto", 

@@ -3,7 +3,7 @@ import Select from 'react-select'
 import axios from 'axios'
 
 function App() {
-
+  let options = undefined;
   //weather api
   const url = 'https://api.openweathermap.org/data/2.5/weather?q=${location}&appid={}'
   
@@ -31,38 +31,42 @@ function App() {
     ).then (
           data => {
             setBackendData(data)
-          }
+           // console.log(data);
+            options=data.cities;
+            console.log(options);
+          }   
     )
-  }, [])
-
-  const options = [
+  }, [options])
+  console.log(options);
+ /* const options = [
     { value: 'Toronto', label: 'Toronto' },
     { value: 'London', label: 'London' },
     { value: 'New York', label: 'New York' }
   ]
+*/
+ 
+  
 
-console.log(options)
+
   return (
-    <div>
+<div>
+   <select>
           {(typeof backendData.cities === 'undefined') ?(
             <p>Loading...</p>
           ): (
-            backendData.cities.map((cities, i) => (
-              <p key={i}>{cities.name}</p>
+ 
+           backendData.cities.map((cities, i) => (
+            
+            <option key={i} value={cities.name}>{cities.name}</option>
+         
+
             ))
+       
+         
           )}
-        <select>
-              {
-              backendData.cities.map((cities)=>(<option title={cities.id}>{cities.name}</option>))
-              }
-        </select>
       
-      {/*
-      <select>
-          {backendData.cities.map((cities, i) => <option key={i} value={cities.id}>{cities.name}</option>)}
-      </select>
-            */}
-      <Select options={options} />
+    </select>
+     
       
     </div>
   
