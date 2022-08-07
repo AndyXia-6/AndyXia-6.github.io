@@ -1,0 +1,158 @@
+.logo {
+  background: rgba(40, 40, 40, 0.95);
+  width: 440px;
+  height: auto;
+}
+
+.main {
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.info {
+  float: right;
+  width: 1000px;
+  padding: 2em;
+  margin-bottom: 5em;
+  font-size: 1.1em;
+  color: white;
+  background: rgba(40, 40, 40, 0.95);
+}
+
+.title {
+  font-weight: bold;
+  size: 2.5em;
+}
+
+.bar {
+  color: yellow;
+  font-weight: bold;
+  size: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+
+.main-nav-adj {
+  margin: 0;
+  padding: 20px 10px 20px 10px;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  font-size: mediumf;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  font-family: "Quicksand", sans-serif;
+  font-size: x-large;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-family: "Quicksand", sans-serif;
+  font-size: large;
+  color: #a6a8aa;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #f8f190;
+}
+
+.y-link,
+.y-text {
+  color: #f8f190;
+}
+
+.y-arrow {
+  color: #f8f190;
+  font-size: x-large;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.y-gly {
+  color: #f8f190;
+  font-size: medium;
+  padding: 5px;
+}
+
+.row-top-adj {
+  height: 100vh;
+}
+
+.dana-peers {
+  color: #fff;
+  font-size: large;
+}
+
+.stick {
+  color: #f8f190;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.stick-header {
+  color: #f8f190;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.blk {
+  color: #000;
+}
+
+td {
+  padding: 0.5em 1em 1em 1em;
+}
+
+tr {
+  border-top: hidden;
+}
+
+iframe {
+  border: none;
+}
+
+.carousel {
+  background-color: #000;
+  padding-top: 1em;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
